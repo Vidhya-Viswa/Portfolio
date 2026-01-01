@@ -1,4 +1,4 @@
-// src/components/Hero.jsx
+
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -8,7 +8,7 @@ export default function Hero() {
       id="hero"
       className="h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 via-purple-800 to-pink-600 relative overflow-hidden"
     >
-      {/* Animated background particles for visual flair */}
+      
       <div
         className="absolute inset-0 animate-pulse opacity-50"
         style={{

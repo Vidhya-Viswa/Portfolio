@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CodeIcon, PencilIcon } from '@heroicons/react/outline'; // Example icons
+import { CodeIcon, PencilIcon } from '@heroicons/react/outline'; 
 
 export default function Skills({ skills }) {
   return (
@@ -13,7 +13,7 @@ export default function Skills({ skills }) {
               whileHover={{ scale: 1.05 }}
               className="bg-white/10 p-6 rounded-xl shadow-lg backdrop-blur-sm"
             >
-              <CodeIcon className="w-12 h-12 text-yellow-400 mb-4" /> {/* Customize icon per skill */}
+              <CodeIcon className="w-12 h-12 text-yellow-400 mb-4" /> 
               <h3 className="text-xl font-semibold text-white mb-2">{skill.name}</h3>
               <div className="w-full bg-gray-700 rounded-full h-4">
                 <motion.div

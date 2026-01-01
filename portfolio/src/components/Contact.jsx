@@ -17,10 +17,10 @@ export default function Contact() {
     setIsSending(true);
     setStatus('');
 
-    // Replace with your EmailJS IDs
-    const serviceID = 'service_an36j5h'; // From Step 3
-    const templateID = 'template_6n1nkdf'; // From Step 2
-    const publicKey = '1LYo9tGXBA_qofdrN'; // From Step 3
+    
+    const serviceID = 'service_an36j5h'; 
+    const templateID = 'template_6n1nkdf'; 
+    const publicKey = '1LYo9tGXBA_qofdrN'; 
 
     emailjs.send(serviceID, templateID, {
       from_name: formData.name,
@@ -118,7 +118,7 @@ export default function Contact() {
                 required
                 rows="4"
                 className="w-full p-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-white placeholder-gray-300 resize-none"
-                placeholder="Your message here..."
+                placeholder="Sprinkle some magic — type your message here!"
               ></textarea>
             </div>
             <button

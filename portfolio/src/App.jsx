@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion'; // Add this
+import { motion } from 'framer-motion'; 
 import { db } from './firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import Header from './components/Header';
-import Hero from './components/Hero'; // New component
+import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white overflow-x-hidden">
       <Header />
-      <Hero /> {/* New hero section */}
+      <Hero /> 
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
         <About />
       </motion.div>

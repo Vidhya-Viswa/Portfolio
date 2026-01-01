@@ -13,7 +13,7 @@ import { useState } from 'react';
       >
         <nav className="max-w-6xl mx-auto flex justify-between items-center p-4">
           <h1 className="text-2xl font-bold text-white">Vidhya V</h1>
-          {/* Hamburger Menu Button (Three Lines) */}
+          
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="sm:hidden text-white focus:outline-none"
@@ -25,7 +25,7 @@ import { useState } from 'react';
               <span className={`block w-5 h-0.5 bg-white transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
             </div>
           </button>
-          {/* Desktop Menu */}
+          
           <ul className="hidden sm:flex space-x-6">
             <li><a href="#hero" className="text-white hover:text-yellow-400 transition">Home</a></li>
             <li><a href="#about" className="text-white hover:text-yellow-400 transition">About</a></li>
@@ -33,7 +33,7 @@ import { useState } from 'react';
             <li><a href="#certifications" className="text-white hover:text-yellow-400 transition">Certifications</a></li>
             <li><a href="#contact" className="text-white hover:text-yellow-400 transition">Contact</a></li>
           </ul>
-          {/* Mobile Menu Dropdown */}
+          
           {isOpen && (
             <motion.ul
               initial={{ opacity: 0, y: -20 }}
