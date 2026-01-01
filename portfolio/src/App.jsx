@@ -18,7 +18,7 @@ function App() {
     const fetchSkills = async () => {
       const querySnapshot = await getDocs(collection(db, 'skills'));
       setSkills(querySnapshot.docs.map(doc => doc.data()));
-      console.log('Skills data:', querySnapshot.docs.map(doc => doc.data()));
+      
     };
     const fetchCerts = async () => {
       const querySnapshot = await getDocs(collection(db, 'certifications'));
