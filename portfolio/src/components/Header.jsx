@@ -30,6 +30,7 @@ import { useState } from 'react';
             <li><a href="#hero" className="text-white hover:text-yellow-400 transition">Home</a></li>
             <li><a href="#about" className="text-white hover:text-yellow-400 transition">About</a></li>
             <li><a href="#skills" className="text-white hover:text-yellow-400 transition">Skills</a></li>
+            <li><a href="#projects" className="text-white hover:text-yellow-400 transition">Projects</a></li>
             <li><a href="#certifications" className="text-white hover:text-yellow-400 transition">Certifications</a></li>
             <li><a href="#contact" className="text-white hover:text-yellow-400 transition">Contact</a></li>
           </ul>
@@ -40,11 +41,11 @@ import { useState } from 'react';
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="absolute top-full left-0 w-full bg-white/10 backdrop-blur-md shadow-lg sm:hidden flex flex-col space-y-4 p-4"
-            >
+              className="absolute top-full left-0 w-full bg-white/10 backdrop-blur-md shadow-lg sm:hidden flex flex-col space-y-4 p-4">
               <li><a href="#hero" className="text-white hover:text-yellow-400 transition block" onClick={() => setIsOpen(false)}>Home</a></li>
               <li><a href="#about" className="text-white hover:text-yellow-400 transition block" onClick={() => setIsOpen(false)}>About</a></li>
               <li><a href="#skills" className="text-white hover:text-yellow-400 transition block" onClick={() => setIsOpen(false)}>Skills</a></li>
+              <li><a href="#projects" className="text-white hover:text-yellow-400 transition block" onClick={() => setIsOpen(false)}>Projects</a></li>
               <li><a href="#certifications" className="text-white hover:text-yellow-400 transition block" onClick={() => setIsOpen(false)}>Certifications</a></li>
               <li><a href="#contact" className="text-white hover:text-yellow-400 transition block" onClick={() => setIsOpen(false)}>Contact</a></li>
             </motion.ul>
